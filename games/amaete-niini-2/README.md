@@ -52,6 +52,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\patch-voicecut.ps1" -
 - バッファー0の効果音や、シナリオ内の通常の停止命令は変更しません。
 - セーブデータやゲーム設定は変更しません。
 
-## このゲームから得られた知見
+## 補足
 
 TyranoScript製のゲームでは、ボイス専用の仕組みではなく、SEバッファーでキャラクターボイスを管理していることがあります。設定画面だけでなく、`voconfig`、`playse`、`mute.ogg` とバッファー番号の関係を調べると、どこでボイスを止めているのか見つけやすくなります。
