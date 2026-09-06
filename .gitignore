@@ -1,0 +1,18 @@
+# Proprietary game files
+*.asar
+*.xp3
+*.pak
+*.arc
+*.bak
+
+# Temporary and generated files
+.tmp/
+tmp/
+*.log
+*.patch-test/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

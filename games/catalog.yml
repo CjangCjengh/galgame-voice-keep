@@ -1,0 +1,16 @@
+schema_version: 1
+
+games:
+  - id: "amaete-niini-2"
+    title_ja: "あまえて☆にぃに2〜バブみのある妹たちは、にぃにの××をえらいえらいしてあげたいんです♪"
+    title_short: "あまえて☆にぃに2"
+    aliases:
+      - "あまえてにぃに2"
+      - "あまえて☆にぃに２"
+      - "あまえてにいに2"
+      - "あまえて にぃに 2"
+    editions:
+      - "DL版"
+    engine: "TyranoScript"
+    method: "patch"
+    path: "games/amaete-niini-2"

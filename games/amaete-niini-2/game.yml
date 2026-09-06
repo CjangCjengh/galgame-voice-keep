@@ -1,0 +1,18 @@
+schema_version: 1
+id: "amaete-niini-2"
+title_ja: "あまえて☆にぃに2〜バブみのある妹たちは、にぃにの××をえらいえらいしてあげたいんです♪"
+title_short: "あまえて☆にぃに2"
+aliases:
+  - "あまえてにぃに2"
+  - "あまえて☆にぃに２"
+  - "あまえてにいに2"
+edition: "DL版"
+engine: "TyranoScript"
+method: "scenario-tag-replacement"
+
+supported_files:
+  - path: "resources/app.asar"
+    size: 234881640
+    sha256_original: "B1F07DD06617EE99FA4F8E0462C95B87DE298D5AE64627D38D149C987347E933"
+    sha256_patched: "842BF1738CD918DA5ECD1560CC5F65EBFBF11F4C213B015D086E7D3183AD478A"
+    replacements: 1870
