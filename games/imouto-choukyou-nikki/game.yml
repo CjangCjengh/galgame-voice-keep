@@ -1,0 +1,18 @@
+schema_version: 1
+id: "imouto-choukyou-nikki"
+title_ja: "妹調教日記～こんなツンデレが俺の妹なわけない！！～"
+title_kana: "いもうとちょうきょうにっき"
+title_short: "妹調教日記"
+aliases:
+  - "妹調教日記〜こんなツンデレが俺の妹なわけない！！〜"
+  - "妹調教日記~こんなツンデレが俺の妹なわけない!!~"
+  - "いもうとちょうきょうにっき"
+edition: "パッケージ版"
+engine: "CatSystem2"
+method: "missing-pcm-command-disable"
+
+supported_files:
+  - path: "scene.int"
+    size: 592537
+    sha256_original: "AD7CC3B8134D2AD4D9984A051BC111ACE66640DA2A4230F804B375A66075F709"
+    disabled_commands: 407

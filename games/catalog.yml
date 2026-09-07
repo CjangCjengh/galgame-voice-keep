@@ -3,6 +3,7 @@ schema_version: 1
 games:
   - id: "amaete-niini-2"
     title_ja: "あまえて☆にぃに2〜バブみのある妹たちは、にぃにの××をえらいえらいしてあげたいんです♪"
+    title_kana: "あまえてにぃに2"
     title_short: "あまえて☆にぃに2"
     aliases:
       - "あまえてにぃに2"
@@ -14,3 +15,17 @@ games:
     engine: "TyranoScript"
     method: "patch"
     path: "games/amaete-niini-2"
+
+  - id: "imouto-choukyou-nikki"
+    title_ja: "妹調教日記～こんなツンデレが俺の妹なわけない！！～"
+    title_kana: "いもうとちょうきょうにっき"
+    title_short: "妹調教日記"
+    aliases:
+      - "妹調教日記〜こんなツンデレが俺の妹なわけない！！〜"
+      - "妹調教日記~こんなツンデレが俺の妹なわけない!!~"
+      - "いもうとちょうきょうにっき"
+    editions:
+      - "パッケージ版"
+    engine: "CatSystem2"
+    method: "patch"
+    path: "games/imouto-choukyou-nikki"
