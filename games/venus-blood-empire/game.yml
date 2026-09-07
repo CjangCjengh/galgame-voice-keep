@@ -1,0 +1,22 @@
+schema_version: 1
+id: "venus-blood-empire"
+title_ja: "VenusBlood-EMPIRE-"
+title_kana: "ゔぃーなすぶらっど えんぱいあ"
+title_short: "VenusBlood-EMPIRE-"
+aliases:
+  - "VenusuBlood-EMPIRE-"
+  - "VenusBlood -EMPIRE-"
+  - "Venus Blood EMPIRE"
+  - "ヴィーナスブラッド エンパイア"
+  - "ヴィーナスブラッド－エンパイア－"
+  - "VBE"
+edition: "パッケージ版"
+engine: "KiriKiri2"
+method: "xp3-script-patch"
+
+supported_files:
+  - path: "patch.xp3"
+    size: 86549914
+    sha256_original: "DDB5D388C94906B848D77840E2206A007491457ADDE52D60D7D7E797AC82956E"
+    size_patched: 86807487
+    sha256_patched: "BE96D3CA12E6E87DCE26E56561D3693E080899FC8086247CD618AC70E1CC6938"

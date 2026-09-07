@@ -50,6 +50,25 @@ games:
     summary: "存在しない音声を参照する命令だけを無効にし、一部の台詞でボイスが止まる問題を直します。"
     path: "games/imouto-choukyou-nikki-fandisc"
 
+  - id: "venus-blood-empire"
+    title_ja: "VenusBlood-EMPIRE-"
+    title_kana: "ゔぃーなすぶらっど えんぱいあ"
+    title_short: "VenusBlood-EMPIRE-"
+    aliases:
+      - "VenusuBlood-EMPIRE-"
+      - "VenusBlood -EMPIRE-"
+      - "Venus Blood EMPIRE"
+      - "ヴィーナスブラッド エンパイア"
+      - "ヴィーナスブラッド－エンパイア－"
+      - "VBE"
+    editions:
+      - "パッケージ版"
+    engine: "KiriKiri2"
+    method: "patch"
+    method_label: "PowerShellパッチ"
+    summary: "ページ送りのたびに実行されるボイス停止命令だけを外し、次のボイスまで再生を続けます。"
+    path: "games/venus-blood-empire"
+
   - id: "koukaku-shimai"
     title_ja: "肛拡姉妹～義父に徹底開発される連れ子アナル～"
     title_kana: "こうかくしまい ぎふにてっていかいはつされるつれこあなる"
