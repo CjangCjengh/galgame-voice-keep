@@ -403,8 +403,13 @@ if (-not (Test-Path -LiteralPath $GameDirectory -PathType Container)) {
 
 $gameDirectoryFull = (Resolve-Path -LiteralPath $GameDirectory).Path.TrimEnd('\')
 $scenePath = Join-Path $gameDirectoryFull 'scene.int'
-$backupPath = "$scenePath.before-voicecut-patch.bak"
-$temporaryPath = "$scenePath.voicecut-patch.tmp"
+$backupPath = "$scenePath.before-voice-keep-patch.bak"
+$legacyBackupPath = "$scenePath.before-voicecut-patch.bak"
+if (-not (Test-Path -LiteralPath $backupPath -PathType Leaf) -and
+    (Test-Path -LiteralPath $legacyBackupPath -PathType Leaf)) {
+    $backupPath = $legacyBackupPath
+}
+$temporaryPath = "$scenePath.voice-keep-patch.tmp"
 
 if ($Mode -ne 'Check') {
     try {
@@ -469,7 +474,7 @@ if ($Mode -eq 'Check') {
 }
 
 if ($state -eq '適用済み') {
-    Write-Output 'ボイスカット修正パッチはすでに適用されています。変更は行いませんでした。'
+    Write-Output 'ボイスキープ用パッチはすでに適用されています。変更は行いませんでした。'
     exit 0
 }
 if ($state -ne '未適用' -or (Get-Item -LiteralPath $scenePath).Length -ne $expectedSceneSize) {
@@ -512,7 +517,7 @@ finally {
 }
 
 [pscustomobject]@{
-    結果 = 'ボイスカット修正パッチを適用しました'
+    結果 = 'ボイスキープ用パッチを適用しました'
     無効化した命令 = $expectedMissingCommandCount
     対象シーン = 39
     バックアップ = $backupPath

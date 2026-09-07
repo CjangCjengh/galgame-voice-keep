@@ -187,7 +187,12 @@ if (-not (Test-Path -LiteralPath $GameDirectory -PathType Container)) {
 
 $gameDirectoryFull = (Resolve-Path -LiteralPath $GameDirectory).Path.TrimEnd('\')
 $asarPath = Join-Path $gameDirectoryFull 'resources\app.asar'
-$backupPath = "$asarPath.before-voicecut-patch.bak"
+$backupPath = "$asarPath.before-voice-keep-patch.bak"
+$legacyBackupPath = "$asarPath.before-voicecut-patch.bak"
+if (-not (Test-Path -LiteralPath $backupPath -PathType Leaf) -and
+    (Test-Path -LiteralPath $legacyBackupPath -PathType Leaf)) {
+    $backupPath = $legacyBackupPath
+}
 
 if ($Mode -ne 'Check') {
     try {
@@ -251,7 +256,7 @@ if ($Mode -eq 'Check') {
 }
 
 if ($state -eq '適用済み') {
-    Write-Output 'ボイスカット無効化パッチはすでに適用されています。変更は行いませんでした。'
+    Write-Output 'ボイスキープ用パッチはすでに適用されています。変更は行いませんでした。'
     exit 0
 }
 
@@ -293,7 +298,7 @@ if ($scanAfter.Count -ne 0 -or $hashAfter -ne $expectedPatchedSha256) {
 }
 
 [pscustomobject]@{
-    結果 = 'ボイスカット無効化パッチを適用しました'
+    結果 = 'ボイスキープ用パッチを適用しました'
     置換数 = $scan.Count
     パッチ後SHA256 = $hashAfter
     バックアップ = $backupPath

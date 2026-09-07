@@ -1,0 +1,18 @@
+schema_version: 1
+id: "fukushuu-no-shiryou-majutsushi"
+title_ja: "復讐の死霊魔術師 ～望むのは死の痛み～"
+title_kana: "ふくしゅうのしりょうまじゅつし のぞむのはしのいたみ"
+title_short: "復讐の死霊魔術師"
+aliases:
+  - "復讐の死霊魔術師～望むのは死の痛み～"
+  - "復讐の死霊魔術師 望むのは死の痛み"
+  - "ふくしゅうのしりょうまじゅつし"
+edition: "DL版"
+engine: "System-NNN"
+method: "voice-channel-code-patch"
+
+supported_files:
+  - path: "shiryo.exe"
+    size: 1966592
+    sha256_original: "09246844C2FD9E05E29F00298AB7DE678117B23667981C83D95B718D874FD591"
+    sha256_patched: "ADDE46EB3CA75EA01ACB2D7E32533C570B12E2FB5016C432C9767C8D614D4FB9"

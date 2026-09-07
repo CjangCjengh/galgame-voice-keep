@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cjangcjengh.github.io/galgame-voicecut-guide/sitemap.xml
+Sitemap: https://cjangcjengh.github.io/galgame-voice-keep/sitemap.xml

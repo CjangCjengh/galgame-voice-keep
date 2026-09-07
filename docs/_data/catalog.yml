@@ -49,3 +49,19 @@ games:
     method_label: "PowerShellパッチ"
     summary: "存在しない音声を参照する命令だけを無効にし、一部の台詞でボイスが止まる問題を直します。"
     path: "games/imouto-choukyou-nikki-fandisc"
+
+  - id: "fukushuu-no-shiryou-majutsushi"
+    title_ja: "復讐の死霊魔術師 ～望むのは死の痛み～"
+    title_kana: "ふくしゅうのしりょうまじゅつし のぞむのはしのいたみ"
+    title_short: "復讐の死霊魔術師"
+    aliases:
+      - "復讐の死霊魔術師～望むのは死の痛み～"
+      - "復讐の死霊魔術師 望むのは死の痛み"
+      - "ふくしゅうのしりょうまじゅつし"
+    editions:
+      - "DL版"
+    engine: "System-NNN"
+    method: "patch"
+    method_label: "PowerShellパッチ"
+    summary: "ボイスのないテキスト用の停止処理だけを無視し、次のボイスまで再生を続けます。"
+    path: "games/fukushuu-no-shiryou-majutsushi"

@@ -1,9 +1,9 @@
-title: "ボイスカット無効化ガイド"
-description: "ギャルゲーのボイスカットを無効にする方法とパッチを、ゲーム名から探せます。"
+title: "ギャルゲーのボイスキープ化メモ"
+description: "ギャルゲーをボイスキープにする方法とパッチを、ゲーム名から探せます。"
 lang: "ja"
 url: "https://cjangcjengh.github.io"
-baseurl: "/galgame-voicecut-guide"
-repository: "CjangCjengh/galgame-voicecut-guide"
+baseurl: "/galgame-voice-keep"
+repository: "CjangCjengh/galgame-voice-keep"
 markdown: kramdown
 permalink: pretty
 exclude:

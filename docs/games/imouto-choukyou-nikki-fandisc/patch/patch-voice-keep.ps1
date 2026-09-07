@@ -426,10 +426,20 @@ if (-not (Test-Path -LiteralPath $GameDirectory -PathType Container)) {
 $gameDirectoryFull = (Resolve-Path -LiteralPath $GameDirectory).Path.TrimEnd('\')
 $scenePath = Join-Path $gameDirectoryFull 'scene.int'
 $updatePath = Join-Path $gameDirectoryFull 'UPDATE00.INT'
-$sceneBackupPath = "$scenePath.before-voicecut-patch.bak"
-$updateBackupPath = "$updatePath.before-voicecut-patch.bak"
-$sceneTemporaryPath = "$scenePath.voicecut-patch.tmp"
-$updateTemporaryPath = "$updatePath.voicecut-patch.tmp"
+$sceneBackupPath = "$scenePath.before-voice-keep-patch.bak"
+$updateBackupPath = "$updatePath.before-voice-keep-patch.bak"
+$legacySceneBackupPath = "$scenePath.before-voicecut-patch.bak"
+$legacyUpdateBackupPath = "$updatePath.before-voicecut-patch.bak"
+if (-not (Test-Path -LiteralPath $sceneBackupPath -PathType Leaf) -and
+    (Test-Path -LiteralPath $legacySceneBackupPath -PathType Leaf)) {
+    $sceneBackupPath = $legacySceneBackupPath
+}
+if (-not (Test-Path -LiteralPath $updateBackupPath -PathType Leaf) -and
+    (Test-Path -LiteralPath $legacyUpdateBackupPath -PathType Leaf)) {
+    $updateBackupPath = $legacyUpdateBackupPath
+}
+$sceneTemporaryPath = "$scenePath.voice-keep-patch.tmp"
+$updateTemporaryPath = "$updatePath.voice-keep-patch.tmp"
 
 if ($Mode -ne 'Check') {
     try {
@@ -517,7 +527,7 @@ if ($Mode -eq 'Check') {
 }
 
 if ($state -eq '適用済み') {
-    Write-Output 'ボイスカット修正パッチはすでに適用されています。変更は行いませんでした。'
+    Write-Output 'ボイスキープ用パッチはすでに適用されています。変更は行いませんでした。'
     exit 0
 }
 if ($state -ne '未適用' -or
@@ -588,8 +598,8 @@ finally {
 }
 
 [pscustomobject]@{
-    結果 = 'ボイスカット修正パッチを適用しました'
+    結果 = 'ボイスキープ用パッチを適用しました'
     無効化した命令 = $expectedMissingCommandCount
     対象シーン = $expectedAffectedSceneCount
-    バックアップ = 'scene.int.before-voicecut-patch.bak, UPDATE00.INT.before-voicecut-patch.bak'
+    バックアップ = "$sceneBackupPath, $updateBackupPath"
 }
