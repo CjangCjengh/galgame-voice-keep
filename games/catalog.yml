@@ -50,6 +50,22 @@ games:
     summary: "存在しない音声を参照する命令だけを無効にし、一部の台詞でボイスが止まる問題を直します。"
     path: "games/imouto-choukyou-nikki-fandisc"
 
+  - id: "koukaku-shimai"
+    title_ja: "肛拡姉妹～義父に徹底開発される連れ子アナル～"
+    title_kana: "こうかくしまい ぎふにてっていかいはつされるつれこあなる"
+    title_short: "肛拡姉妹"
+    aliases:
+      - "肛拡姉妹〜義父に徹底開発される連れ子アナル〜"
+      - "肛拡姉妹 義父に徹底開発される連れ子アナル"
+      - "こうかくしまい"
+    editions:
+      - "DL版"
+    engine: "Bruns"
+    method: "patch"
+    method_label: "PowerShellパッチ"
+    summary: "テキストを進めるたびに実行されるボイス停止処理だけを無効にし、次のボイスまで再生を続けます。"
+    path: "games/koukaku-shimai"
+
   - id: "fukushuu-no-shiryou-majutsushi"
     title_ja: "復讐の死霊魔術師 ～望むのは死の痛み～"
     title_kana: "ふくしゅうのしりょうまじゅつし のぞむのはしのいたみ"

@@ -1,0 +1,18 @@
+schema_version: 1
+id: "koukaku-shimai"
+title_ja: "肛拡姉妹～義父に徹底開発される連れ子アナル～"
+title_kana: "こうかくしまい ぎふにてっていかいはつされるつれこあなる"
+title_short: "肛拡姉妹"
+aliases:
+  - "肛拡姉妹〜義父に徹底開発される連れ子アナル〜"
+  - "肛拡姉妹 義父に徹底開発される連れ子アナル"
+  - "こうかくしまい"
+edition: "DL版"
+engine: "Bruns"
+method: "voice-stream-stop-code-patch"
+
+supported_files:
+  - path: "肛拡姉妹.exe"
+    size: 1681408
+    sha256_original: "A966FEECD51E94E670FDB29D446EDE2A11C7660EEC37F81F5EC2E134F0C6E42D"
+    sha256_patched: "426CD54387B8B34BB87EFA2EB1D318D8D0B07420288F3934A1320334B800E19E"
