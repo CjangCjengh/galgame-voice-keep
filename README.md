@@ -10,6 +10,7 @@
 | --- | --- | --- |
 | [あまえて☆にぃに2〜バブみのある妹たちは、にぃにの××をえらいえらいしてあげたいんです♪](games/amaete-niini-2/) | TyranoScript | PowerShellパッチ |
 | [妹調教日記～こんなツンデレが俺の妹なわけない！！～](games/imouto-choukyou-nikki/) | CatSystem2 | PowerShellパッチ |
+| [妹調教日記ファンディスク](games/imouto-choukyou-nikki-fandisc/) | CatSystem2 | PowerShellパッチ |
 
 表記ゆれを含む検索用の一覧は [`games/catalog.yml`](games/catalog.yml) にあります。
 

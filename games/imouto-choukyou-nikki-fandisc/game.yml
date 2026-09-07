@@ -1,0 +1,22 @@
+schema_version: 1
+id: "imouto-choukyou-nikki-fandisc"
+title_ja: "妹調教日記ファンディスク"
+title_kana: "いもうとちょうきょうにっきふぁんでぃすく"
+title_short: "妹調教日記ファンディスク"
+aliases:
+  - "妹調教日記FD"
+  - "妹調教日記 Fan Disc"
+  - "いもうとちょうきょうにっきふぁんでぃすく"
+edition: "パッケージ版"
+engine: "CatSystem2"
+method: "missing-pcm-command-disable"
+
+supported_files:
+  - path: "scene.int"
+    size: 287911
+    sha256_original: "B335550C298DE8CE73283146BC54F3AFEF993BDD48361C6E871AF4523993EEAC"
+    disabled_commands: 20
+  - path: "UPDATE00.INT"
+    size: 2378262
+    sha256_original: "BC5E07FA8F53599641CACB061347224CAEEFDE823F7E52F3A673E0375821BCB2"
+    disabled_commands: 100

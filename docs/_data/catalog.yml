@@ -33,3 +33,19 @@ games:
     method_label: "PowerShellパッチ"
     summary: "存在しない音声を参照する命令だけを無効にし、一部の台詞でボイスが止まる問題を直します。"
     path: "games/imouto-choukyou-nikki"
+
+  - id: "imouto-choukyou-nikki-fandisc"
+    title_ja: "妹調教日記ファンディスク"
+    title_kana: "いもうとちょうきょうにっきふぁんでぃすく"
+    title_short: "妹調教日記ファンディスク"
+    aliases:
+      - "妹調教日記FD"
+      - "妹調教日記 Fan Disc"
+      - "いもうとちょうきょうにっきふぁんでぃすく"
+    editions:
+      - "パッケージ版"
+    engine: "CatSystem2"
+    method: "patch"
+    method_label: "PowerShellパッチ"
+    summary: "存在しない音声を参照する命令だけを無効にし、一部の台詞でボイスが止まる問題を直します。"
+    path: "games/imouto-choukyou-nikki-fandisc"
