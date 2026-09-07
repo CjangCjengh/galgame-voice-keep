@@ -104,6 +104,25 @@ games:
     summary: "ページ側のボイス停止を外し、次のボイス開始時に男女両方の音声バッファを切り替えます。"
     path: "games/venus-blood-chimera"
 
+  - id: "venus-blood-desire"
+    title_ja: "VenusBlood-DESIRE-"
+    title_kana: "ゔぃーなすぶらっど でざいあ"
+    title_short: "VenusBlood-DESIRE-"
+    aliases:
+      - "VenusBlood-Desire-"
+      - "VenusBlood -DESIRE-"
+      - "Venus Blood DESIRE"
+      - "ヴィーナスブラッド デザイア"
+      - "ヴィーナスブラッド－デザイア－"
+      - "VBD"
+    editions:
+      - "パッケージ版（製品版 Ver.1.00）"
+    engine: "KiriKiri2"
+    method: "patch"
+    method_label: "PowerShellパッチ"
+    summary: "ページ送り時のボイス停止命令だけを外し、次のボイスまで再生を続けます。"
+    path: "games/venus-blood-desire"
+
   - id: "koukaku-shimai"
     title_ja: "肛拡姉妹～義父に徹底開発される連れ子アナル～"
     title_kana: "こうかくしまい ぎふにてっていかいはつされるつれこあなる"

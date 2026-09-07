@@ -1,0 +1,26 @@
+schema_version: 1
+id: "venus-blood-desire"
+title_ja: "VenusBlood-DESIRE-"
+title_kana: "ゔぃーなすぶらっど でざいあ"
+title_short: "VenusBlood-DESIRE-"
+aliases:
+  - "VenusBlood-Desire-"
+  - "VenusBlood -DESIRE-"
+  - "Venus Blood DESIRE"
+  - "ヴィーナスブラッド デザイア"
+  - "ヴィーナスブラッド－デザイア－"
+  - "VBD"
+edition: "パッケージ版（製品版 Ver.1.00）"
+engine: "KiriKiri2"
+method: "xp3-overlay-patch"
+
+supported_entries:
+  - archive: "data.xp3"
+    path: "game_system/macro.ks"
+    size: 138065
+    sha256_original: "FE8237284C4648153DF348E5149356606CFF4BC455398EB369DB06909D24F40E"
+
+generated_files:
+  - path: "patch.xp3"
+    size: 138201
+    sha256: "B62D5E8C39694DD00CEB0E0D4FF14E67A5BD4F7BF6C329A40D6E076BEB686EE1"
