@@ -11,6 +11,7 @@
 | [あまえて☆にぃに2〜バブみのある妹たちは、にぃにの××をえらいえらいしてあげたいんです♪](games/amaete-niini-2/) | TyranoScript | PowerShellパッチ |
 | [妹調教日記～こんなツンデレが俺の妹なわけない！！～](games/imouto-choukyou-nikki/) | CatSystem2 | PowerShellパッチ |
 | [妹調教日記ファンディスク](games/imouto-choukyou-nikki-fandisc/) | CatSystem2 | PowerShellパッチ |
+| [VenusBlood](games/venus-blood/) | KiriKiri2 | PowerShellパッチ |
 | [VenusBlood-EMPIRE-](games/venus-blood-empire/) | KiriKiri2 | PowerShellパッチ |
 | [肛拡姉妹～義父に徹底開発される連れ子アナル～](games/koukaku-shimai/) | Bruns | PowerShellパッチ |
 | [復讐の死霊魔術師 ～望むのは死の痛み～](games/fukushuu-no-shiryou-majutsushi/) | System-NNN | PowerShellパッチ |

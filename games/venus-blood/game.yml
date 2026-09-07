@@ -1,0 +1,23 @@
+schema_version: 1
+id: "venus-blood"
+title_ja: "VenusBlood"
+title_kana: "ゔぃーなすぶらっど"
+title_short: "VenusBlood"
+aliases:
+  - "Venus Blood"
+  - "ヴィーナスブラッド"
+  - "VenusBlood 10th AnniversaryPack"
+  - "ヴィーナスブラッド 10th AnniversaryPack"
+edition: "10th AnniversaryPack版"
+engine: "KiriKiri2"
+method: "xp3-overlay-patch"
+
+supported_files:
+  - path: "data.xp3"
+    size: 731761145
+    sha256_original: "CCAB1338F4C4F32A560C5C0AF5FD3BA142C6DA5D61081CC652C537297301AD66"
+
+generated_files:
+  - path: "patch2.xp3"
+    size: 55738
+    sha256: "F582F844536ADBC7A27E013333E0D6ACF2B7EC74DF88496585737A3B399403DD"

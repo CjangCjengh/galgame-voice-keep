@@ -50,6 +50,23 @@ games:
     summary: "存在しない音声を参照する命令だけを無効にし、一部の台詞でボイスが止まる問題を直します。"
     path: "games/imouto-choukyou-nikki-fandisc"
 
+  - id: "venus-blood"
+    title_ja: "VenusBlood"
+    title_kana: "ゔぃーなすぶらっど"
+    title_short: "VenusBlood"
+    aliases:
+      - "Venus Blood"
+      - "ヴィーナスブラッド"
+      - "VenusBlood 10th AnniversaryPack"
+      - "ヴィーナスブラッド 10th AnniversaryPack"
+    editions:
+      - "10th AnniversaryPack版"
+    engine: "KiriKiri2"
+    method: "patch"
+    method_label: "PowerShellパッチ"
+    summary: "テキスト表示前のボイス停止命令だけを外した追加XP3を作成し、次のボイスまで再生を続けます。"
+    path: "games/venus-blood"
+
   - id: "venus-blood-empire"
     title_ja: "VenusBlood-EMPIRE-"
     title_kana: "ゔぃーなすぶらっど えんぱいあ"
