@@ -85,9 +85,8 @@ button, select { cursor: pointer; }
   letter-spacing: 0.05em;
 }
 .hero { padding: 78px 0 64px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 72%, transparent); }
-.hero-copy { max-width: 780px; }
 .hero h1 { margin: 0; font-size: clamp(2.7rem, 6vw, 4.7rem); line-height: 1.12; letter-spacing: -0.045em; }
-.hero-lead { max-width: 650px; margin: 22px 0 0; color: var(--muted); font-size: 0.98rem; }
+.hero-lead { margin: 22px 0 0; color: var(--muted); font-size: 0.98rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 29px; }
 .button {
   display: inline-flex; min-height: 43px; align-items: center; justify-content: center; padding: 0 17px;
