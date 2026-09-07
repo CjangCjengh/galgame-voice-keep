@@ -15,7 +15,7 @@
     if (themeToggle) {
       themeToggle.setAttribute("aria-label", `${theme === "dark" ? "明るい" : "暗い"}表示に切り替える`);
     }
-    if (themeMeta) themeMeta.content = theme === "dark" ? "#17141d" : "#f8f4f7";
+    if (themeMeta) themeMeta.content = theme === "dark" ? "#0d1117" : "#f3f5f7";
   }
 
   setTheme(preferredTheme(), false);

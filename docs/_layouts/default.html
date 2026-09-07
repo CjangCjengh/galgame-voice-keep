@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" content="#f8f4f7">
+    <meta name="theme-color" content="#f3f5f7">
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -17,17 +17,12 @@
     <a class="skip-link" href="#main">本文へ移動</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="トップページへ">
-          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-          <span>Voicecut Guide</span>
-        </a>
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="トップページへ">ボイスカット無効化ガイド</a>
         <nav class="site-nav" aria-label="メインナビゲーション">
           <a href="{{ '/' | relative_url }}#search">ゲームを探す</a>
-          <a href="{{ '/' | relative_url }}#about">ここについて</a>
+          <a href="{{ '/' | relative_url }}#about">収録基準</a>
           <a href="https://github.com/CjangCjengh/galgame-voicecut-guide">GitHub</a>
-          <button class="theme-toggle" id="themeToggle" type="button" aria-label="表示テーマを切り替える">
-            <span class="theme-icon" aria-hidden="true"></span>
-          </button>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="表示テーマを切り替える"><span class="theme-icon" aria-hidden="true"></span>表示切替</button>
         </nav>
       </div>
     </header>
@@ -36,7 +31,7 @@
 
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <p>次の声が始まるまで、今の声を止めないためのメモ。</p>
+        <p>ゲーム本体、シナリオ、画像、音声は含まれていません。</p>
         <div>
           <a href="https://github.com/CjangCjengh/galgame-voicecut-guide">ソースを見る</a>
           <span aria-hidden="true">·</span>

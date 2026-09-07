@@ -5,32 +5,22 @@ description: "古いギャルゲーのボイスカットを無効にする方法
 ---
 {% assign games = site.data.catalog.games %}
 <section class="hero">
-  <div class="shell hero-grid">
+  <div class="shell">
     <div class="hero-copy">
-      <p class="eyebrow"><span></span> ギャルゲーの音声再生を、もっと自然に</p>
-      <h1>ボイスを、<br><em>次の声まで。</em></h1>
-      <p class="hero-lead">ボイスのないテキストへ進んでも、今のボイスを止めないための方法とパッチをまとめています。</p>
+      <p class="section-label">[ ボイスカット対策データベース ]</p>
+      <h1>ボイスカット<br>無効化ガイド</h1>
+      <p class="hero-lead">ギャルゲーごとのボイスカット無効化手順とパッチをまとめています。タイトル、読み、別名、ゲームエンジンから検索できます。</p>
       <div class="hero-actions">
-        <a class="button primary" href="#search">ゲームを探す</a>
-        <a class="button secondary" href="https://github.com/CjangCjengh/galgame-voicecut-guide">GitHubを見る ↗</a>
+        <a class="button primary" href="#search">ゲームを検索</a>
+        <a class="button secondary" href="https://github.com/CjangCjengh/galgame-voicecut-guide">GitHub ↗</a>
       </div>
     </div>
 
-    <div class="hero-visual" aria-label="音声が次の台詞まで続くイメージ">
-      <div class="visual-topline"><span>VOICE</span><span>CONTINUE</span></div>
-      <div class="wave" aria-hidden="true">
-        <i style="--h: 22%"></i><i style="--h: 44%"></i><i style="--h: 72%"></i><i style="--h: 38%"></i>
-        <i style="--h: 86%"></i><i style="--h: 58%"></i><i style="--h: 30%"></i><i style="--h: 66%"></i>
-        <i style="--h: 92%"></i><i style="--h: 48%"></i><i style="--h: 76%"></i><i style="--h: 34%"></i>
-        <i style="--h: 62%"></i><i style="--h: 26%"></i><i style="--h: 52%"></i><i style="--h: 18%"></i>
-      </div>
-      <div class="visual-timeline" aria-hidden="true">
-        <span class="active"></span><span></span><span></span>
-      </div>
-      <div class="visual-caption">
-        <span>現在のボイス</span>
-        <strong>次のボイスで切り替え</strong>
-      </div>
+    <div class="hero-status" aria-label="掲載情報">
+      <div><span>収録</span><strong>{{ games | size }} 作品</strong></div>
+      <div><span>並び順</span><strong>五十音順</strong></div>
+      <div><span>配布形式</span><strong>スクリプト</strong></div>
+      <div><span>ライセンス</span><strong>MIT</strong></div>
     </div>
   </div>
 </section>
@@ -39,8 +29,8 @@ description: "古いギャルゲーのボイスカットを無効にする方法
   <div class="shell">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">GAME INDEX</p>
-        <h2>対応ゲームを探す</h2>
+        <p class="section-label">[ 検索 ]</p>
+        <h2>対応ゲーム</h2>
       </div>
       <p class="game-total"><strong>{{ games | size }}</strong> 作品を掲載中</p>
     </div>
@@ -77,7 +67,7 @@ description: "古いギャルゲーのボイスカットを無効にする方法
         </label>
         <button class="text-button" id="clearFilters" type="button">条件をクリア</button>
       </div>
-      <p class="search-hint">表記の違いを気にせず検索できます。例：<button type="button" data-query="いもうと">いもうと</button> <button type="button" data-query="CatSystem2">CatSystem2</button></p>
+      <p class="search-hint">全角・半角、ひらがな・カタカナ、空白や記号の違いを吸収して検索します。</p>
     </div>
 
     <div class="result-toolbar">
@@ -90,7 +80,6 @@ description: "古いギャルゲーのボイスカットを無効にする方法
         {% capture search_text %}{{ game.title_ja }} {{ game.title_kana }} {{ game.title_short }} {{ game.id }} {{ game.engine }} {{ game.summary }} {% for alias in game.aliases %}{{ alias }} {% endfor %}{% for edition in game.editions %}{{ edition }} {% endfor %}{% endcapture %}
         {% assign game_url = '/' | append: game.path | append: '/' %}
         <article class="game-card" data-search="{{ search_text | strip_newlines | escape }}" data-engine="{{ game.engine | escape }}" data-editions="{{ game.editions | join: '|' | escape }}" data-title="{{ game.title_ja | escape }}">
-          <div class="game-monogram" aria-hidden="true">{{ game.title_kana | slice: 0 }}</div>
           <div class="game-card-main">
             <div class="tag-row">
               <button class="tag engine-tag" type="button" data-engine-query="{{ game.engine | escape }}">{{ game.engine }}</button>
@@ -123,13 +112,13 @@ description: "古いギャルゲーのボイスカットを無効にする方法
 <section class="about-section" id="about">
   <div class="shell about-grid">
     <div>
-      <p class="eyebrow">ABOUT</p>
-      <h2>ここで扱うもの</h2>
+      <p class="section-label">[ 収録基準 ]</p>
+      <h2>対象について</h2>
     </div>
     <div class="about-copy">
       <p>古いギャルゲーには、ボイスカットの設定が見当たらなかったり、設定をオフにしても一部の台詞でボイスが止まったりする作品があります。</p>
       <p>ここでは、ゲームごとに確認できた対処法を短くまとめ、必要な場合だけパッチを公開しています。ゲーム本体のデータは含めません。</p>
-      <aside><strong>まず確認</strong><span>設定画面に項目がなくても、ウィンドウ上部のメニューバーに設定が隠れていることがあります。</span></aside>
+      <aside><strong>確認項目</strong><span>設定画面に項目がなくても、ウィンドウ上部のメニューバーに設定がある場合があります。</span></aside>
     </div>
   </div>
 </section>
