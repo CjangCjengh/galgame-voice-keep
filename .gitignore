@@ -10,6 +10,8 @@
 tmp/
 *.log
 *.patch-test/
+_site/
+__pycache__/
 
 # OS and editor files
 .DS_Store

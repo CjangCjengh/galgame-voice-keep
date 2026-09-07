@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<section class="game-hero">
+  <div class="shell game-hero-inner">
+    <a class="back-link" href="{{ '/' | relative_url }}#search">← ゲーム一覧へ</a>
+    <p class="eyebrow">対応ゲーム</p>
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
+
+<div class="shell game-page-grid">
+  <article class="prose">{{ content }}</article>
+  <aside class="game-aside" aria-label="関連リンク">
+    <div class="aside-card">
+      <p class="aside-label">困ったときは</p>
+      <p>対象版とゲームの終了状態を確認してから、もう一度試してください。</p>
+      <a href="https://github.com/CjangCjengh/galgame-voicecut-guide/issues">GitHubで報告する ↗</a>
+    </div>
+    <div class="aside-card quiet">
+      <p>ゲーム本体やシナリオ、画像、音声は配布していません。</p>
+    </div>
+  </aside>
+</div>

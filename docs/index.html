@@ -1,0 +1,135 @@
+---
+layout: default
+title:
+description: "古いギャルゲーのボイスカットを無効にする方法やパッチを、タイトル・読み・別名から検索できます。"
+---
+{% assign games = site.data.catalog.games %}
+<section class="hero">
+  <div class="shell hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> ギャルゲーの音声再生を、もっと自然に</p>
+      <h1>ボイスを、<br><em>次の声まで。</em></h1>
+      <p class="hero-lead">ボイスのないテキストへ進んでも、今のボイスを止めないための方法とパッチをまとめています。</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#search">ゲームを探す</a>
+        <a class="button secondary" href="https://github.com/CjangCjengh/galgame-voicecut-guide">GitHubを見る ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-label="音声が次の台詞まで続くイメージ">
+      <div class="visual-topline"><span>VOICE</span><span>CONTINUE</span></div>
+      <div class="wave" aria-hidden="true">
+        <i style="--h: 22%"></i><i style="--h: 44%"></i><i style="--h: 72%"></i><i style="--h: 38%"></i>
+        <i style="--h: 86%"></i><i style="--h: 58%"></i><i style="--h: 30%"></i><i style="--h: 66%"></i>
+        <i style="--h: 92%"></i><i style="--h: 48%"></i><i style="--h: 76%"></i><i style="--h: 34%"></i>
+        <i style="--h: 62%"></i><i style="--h: 26%"></i><i style="--h: 52%"></i><i style="--h: 18%"></i>
+      </div>
+      <div class="visual-timeline" aria-hidden="true">
+        <span class="active"></span><span></span><span></span>
+      </div>
+      <div class="visual-caption">
+        <span>現在のボイス</span>
+        <strong>次のボイスで切り替え</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search-section" id="search">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">GAME INDEX</p>
+        <h2>対応ゲームを探す</h2>
+      </div>
+      <p class="game-total"><strong>{{ games | size }}</strong> 作品を掲載中</p>
+    </div>
+
+    <div class="search-panel">
+      <div class="search-row">
+        <label class="search-box" for="gameSearch">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+          <span class="sr-only">ゲームを検索</span>
+          <input id="gameSearch" type="search" autocomplete="off" list="titleSuggestions" placeholder="ゲーム名・読み・別名・エンジンで検索">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+        <button class="icon-button" id="shareSearch" type="button" title="この検索条件のURLをコピー">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12h8M13 7l5 5-5 5"></path></svg>
+          <span>検索を共有</span>
+        </button>
+      </div>
+
+      <datalist id="titleSuggestions">
+        {% for game in games %}
+          <option value="{{ game.title_ja | escape }}"></option>
+          <option value="{{ game.title_short | escape }}"></option>
+          <option value="{{ game.title_kana | escape }}"></option>
+          {% for alias in game.aliases %}<option value="{{ alias | escape }}"></option>{% endfor %}
+        {% endfor %}
+      </datalist>
+
+      <div class="filter-row">
+        <label>エンジン
+          <select id="engineFilter"><option value="">すべて</option></select>
+        </label>
+        <label>対象版
+          <select id="editionFilter"><option value="">すべて</option></select>
+        </label>
+        <button class="text-button" id="clearFilters" type="button">条件をクリア</button>
+      </div>
+      <p class="search-hint">表記の違いを気にせず検索できます。例：<button type="button" data-query="いもうと">いもうと</button> <button type="button" data-query="CatSystem2">CatSystem2</button></p>
+    </div>
+
+    <div class="result-toolbar">
+      <p id="resultStatus" role="status" aria-live="polite"><strong>{{ games | size }}</strong>件見つかりました</p>
+      <span>五十音順</span>
+    </div>
+
+    <div class="game-list" id="gameList">
+      {% for game in games %}
+        {% capture search_text %}{{ game.title_ja }} {{ game.title_kana }} {{ game.title_short }} {{ game.id }} {{ game.engine }} {{ game.summary }} {% for alias in game.aliases %}{{ alias }} {% endfor %}{% for edition in game.editions %}{{ edition }} {% endfor %}{% endcapture %}
+        {% assign game_url = '/' | append: game.path | append: '/' %}
+        <article class="game-card" data-search="{{ search_text | strip_newlines | escape }}" data-engine="{{ game.engine | escape }}" data-editions="{{ game.editions | join: '|' | escape }}" data-title="{{ game.title_ja | escape }}">
+          <div class="game-monogram" aria-hidden="true">{{ game.title_kana | slice: 0 }}</div>
+          <div class="game-card-main">
+            <div class="tag-row">
+              <button class="tag engine-tag" type="button" data-engine-query="{{ game.engine | escape }}">{{ game.engine }}</button>
+              {% for edition in game.editions %}<span class="tag">{{ edition }}</span>{% endfor %}
+            </div>
+            <h3><a href="{{ game_url | relative_url }}">{{ game.title_ja }}</a></h3>
+            <p>{{ game.summary }}</p>
+            <details class="aliases">
+              <summary>別名・表記ゆれ</summary>
+              <span>{{ game.aliases | join: ' / ' }}</span>
+            </details>
+          </div>
+          <div class="game-card-action">
+            <span>{{ game.method_label }}</span>
+            <a href="{{ game_url | relative_url }}" aria-label="{{ game.title_short }}の手順を見る">手順を見る <b aria-hidden="true">→</b></a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="empty-state" id="emptyState" hidden>
+      <div aria-hidden="true">…</div>
+      <h3>該当するゲームが見つかりません</h3>
+      <p>記号を省いたタイトルや、ひらがなの読みでも試せます。</p>
+      <button class="button secondary" id="emptyReset" type="button">検索条件を戻す</button>
+    </div>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <div class="shell about-grid">
+    <div>
+      <p class="eyebrow">ABOUT</p>
+      <h2>ここで扱うもの</h2>
+    </div>
+    <div class="about-copy">
+      <p>古いギャルゲーには、ボイスカットの設定が見当たらなかったり、設定をオフにしても一部の台詞でボイスが止まったりする作品があります。</p>
+      <p>ここでは、ゲームごとに確認できた対処法を短くまとめ、必要な場合だけパッチを公開しています。ゲーム本体のデータは含めません。</p>
+      <aside><strong>まず確認</strong><span>設定画面に項目がなくても、ウィンドウ上部のメニューバーに設定が隠れていることがあります。</span></aside>
+    </div>
+  </div>
+</section>

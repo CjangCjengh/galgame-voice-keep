@@ -1,0 +1,10 @@
+title: "ボイスカット無効化ガイド"
+description: "ギャルゲーのボイスカットを無効にする方法とパッチを、ゲーム名から探せます。"
+lang: "ja"
+url: "https://cjangcjengh.github.io"
+baseurl: "/galgame-voicecut-guide"
+repository: "CjangCjengh/galgame-voicecut-guide"
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
