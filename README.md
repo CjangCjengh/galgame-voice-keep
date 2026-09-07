@@ -13,6 +13,7 @@
 | [妹調教日記ファンディスク](games/imouto-choukyou-nikki-fandisc/) | CatSystem2 | PowerShellパッチ |
 | [VenusBlood](games/venus-blood/) | KiriKiri2 | PowerShellパッチ |
 | [VenusBlood-EMPIRE-](games/venus-blood-empire/) | KiriKiri2 | PowerShellパッチ |
+| [VenusBlood -CHIMERA-](games/venus-blood-chimera/) | KiriKiri2 | PowerShellパッチ |
 | [肛拡姉妹～義父に徹底開発される連れ子アナル～](games/koukaku-shimai/) | Bruns | PowerShellパッチ |
 | [復讐の死霊魔術師 ～望むのは死の痛み～](games/fukushuu-no-shiryou-majutsushi/) | System-NNN | PowerShellパッチ |
 

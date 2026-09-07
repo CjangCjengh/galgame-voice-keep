@@ -86,6 +86,24 @@ games:
     summary: "ページ送りのたびに実行されるボイス停止命令だけを外し、次のボイスまで再生を続けます。"
     path: "games/venus-blood-empire"
 
+  - id: "venus-blood-chimera"
+    title_ja: "VenusBlood -CHIMERA-"
+    title_kana: "ゔぃーなすぶらっど きめら"
+    title_short: "VenusBlood -CHIMERA-"
+    aliases:
+      - "VenusBlood-CHIMERA-"
+      - "Venus Blood CHIMERA"
+      - "ヴィーナスブラッド キメラ"
+      - "ヴィーナスブラッド－キメラ－"
+      - "VBC"
+    editions:
+      - "パッケージ版"
+    engine: "KiriKiri2"
+    method: "patch"
+    method_label: "PowerShellパッチ"
+    summary: "ページ側のボイス停止を外し、次のボイス開始時に男女両方の音声バッファを切り替えます。"
+    path: "games/venus-blood-chimera"
+
   - id: "koukaku-shimai"
     title_ja: "肛拡姉妹～義父に徹底開発される連れ子アナル～"
     title_kana: "こうかくしまい ぎふにてっていかいはつされるつれこあなる"

@@ -1,0 +1,24 @@
+schema_version: 1
+id: "venus-blood-chimera"
+title_ja: "VenusBlood -CHIMERA-"
+title_kana: "ゔぃーなすぶらっど きめら"
+title_short: "VenusBlood -CHIMERA-"
+aliases:
+  - "VenusBlood-CHIMERA-"
+  - "Venus Blood CHIMERA"
+  - "ヴィーナスブラッド キメラ"
+  - "ヴィーナスブラッド－キメラ－"
+  - "VBC"
+edition: "パッケージ版"
+engine: "KiriKiri2"
+method: "xp3-overlay-patch"
+
+supported_files:
+  - path: "data.xp3"
+    size: 1581857856
+    sha256_original: "26E0550F7542A0A8405D01E8D3D7AA97F76ABC9A3BB23A3BE7660283D94D1A94"
+
+generated_files:
+  - path: "patch.xp3"
+    size: 96312
+    sha256: "FF79CDD8E362778B049FCA6E4FED705C620D19A177FF4172146D8E5C6A4B86C6"
