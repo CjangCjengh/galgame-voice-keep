@@ -154,3 +154,19 @@ games:
     method_label: "PowerShellパッチ"
     summary: "ボイスのないテキスト用の停止処理だけを無視し、次のボイスまで再生を続けます。"
     path: "games/fukushuu-no-shiryou-majutsushi"
+
+  - id: "musume-shimai"
+    title_ja: "娘姉妹"
+    title_kana: "むすめしまい"
+    title_short: "娘姉妹"
+    aliases:
+      - "娘姉妹（むすめしまい）"
+      - "Musume Shimai"
+      - "Musume"
+    editions:
+      - "製品版 Ver.1.00"
+    engine: "GLib2"
+    method: "patch"
+    method_label: "PowerShellランチャー"
+    summary: "テキスト送り時のボイス停止だけを実行中のメモリ上で無効にし、次のボイスまで再生を続けます。"
+    path: "games/musume-shimai"

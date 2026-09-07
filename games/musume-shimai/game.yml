@@ -1,0 +1,17 @@
+schema_version: 1
+id: "musume-shimai"
+title_ja: "娘姉妹"
+title_kana: "むすめしまい"
+title_short: "娘姉妹"
+aliases:
+  - "娘姉妹（むすめしまい）"
+  - "Musume Shimai"
+  - "Musume"
+edition: "製品版 Ver.1.00"
+engine: "GLib2"
+method: "runtime-page-stop-patch"
+
+supported_files:
+  - path: "musume.exe"
+    size: 795648
+    sha256_original: "637B80D078C338A01A7260C664E082AF773DBC8E5F453623A6B44B32BD739A6D"
