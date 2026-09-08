@@ -1,0 +1,17 @@
+schema_version: 1
+id: "mei-shoujo"
+title_ja: "姪少女"
+title_kana: "めいしょうじょ"
+title_short: "姪少女"
+aliases:
+  - "姪少女（めいしょうじょ）"
+  - "Mei Shoujo"
+  - "Meishoujo"
+edition: "製品版"
+engine: "GLib2"
+method: "runtime-page-stop-patch"
+
+supported_files:
+  - path: "meishoujo.exe"
+    size: 894464
+    sha256_original: "B4EBF89621391C7DB234913BF89F86C3458176BFD9003E23863C374A185D547A"

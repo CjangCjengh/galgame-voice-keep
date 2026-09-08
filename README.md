@@ -18,6 +18,7 @@
 | [肛拡姉妹～義父に徹底開発される連れ子アナル～](games/koukaku-shimai/) | Bruns | PowerShellパッチ |
 | [復讐の死霊魔術師 ～望むのは死の痛み～](games/fukushuu-no-shiryou-majutsushi/) | System-NNN | PowerShellパッチ |
 | [娘姉妹](games/musume-shimai/) | GLib2 | PowerShellランチャー |
+| [姪少女](games/mei-shoujo/) | GLib2 | PowerShellランチャー |
 
 表記ゆれを含む検索用の一覧は [`games/catalog.yml`](games/catalog.yml) にあります。
 

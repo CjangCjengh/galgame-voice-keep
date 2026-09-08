@@ -170,3 +170,19 @@ games:
     method_label: "PowerShellランチャー"
     summary: "テキスト送り時のボイス停止だけを実行中のメモリ上で無効にし、次のボイスまで再生を続けます。"
     path: "games/musume-shimai"
+
+  - id: "mei-shoujo"
+    title_ja: "姪少女"
+    title_kana: "めいしょうじょ"
+    title_short: "姪少女"
+    aliases:
+      - "姪少女（めいしょうじょ）"
+      - "Mei Shoujo"
+      - "Meishoujo"
+    editions:
+      - "製品版"
+    engine: "GLib2"
+    method: "patch"
+    method_label: "PowerShellランチャー"
+    summary: "テキスト送り時のボイス停止だけを実行中のメモリ上で無効にし、次のボイスまで再生を続けます。"
+    path: "games/mei-shoujo"
